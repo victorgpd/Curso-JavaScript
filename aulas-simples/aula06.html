@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcúlos</title>
+</head>
+<body>
+    <h1>Somar Valores</h1>
+    <input type="number" name="txtsom1" id="txtsom1"> +
+    <input type="number" name="txtsom2" id="txtsom2"> = <span id="result1">0</span>
+    <input type="submit" value="Somar" onclick="somar()">
+
+    <h1>Subtrair Valores</h1>
+    <input type="number" name="txtsub1" id="txtsub1"> -
+    <input type="number" name="txtsub2" id="txtsub2"> = <span id="result2">0</span>
+    <input type="submit" value="Subtrair" onclick="subtrair()">
+
+    <h1>Multiplicar Valores</h1>
+    <input type="number" name="txtmul1" id="txtmul1"> x
+    <input type="number" name="txtmul2" id="txtmul2"> = <span id="result3">0</span>
+    <input type="submit" value="Multiplicar" onclick="multiplicar()">
+
+    <h1>Dividir Valores</h1>
+    <input type="number" name="txtdiv1" id="txtdiv1"> /
+    <input type="number" name="txtdiv2" id="txtdiv2"> = <span id="result4">0</span>
+    <input type="submit" value="Dividir" onclick="dividir()">
+    
+    <script>
+        function somar() {
+            var som1 = Number(document.getElementById('txtsom1').value)
+            var som2 = Number(document.getElementById('txtsom2').value)
+            document.getElementById('result1').innerText = `${som1 + som2}`
+        }
+        
+        function subtrair() {
+            var sub1 = Number(document.getElementById('txtsub1').value)
+            var sub2 = Number(document.getElementById('txtsub2').value)
+            document.getElementById('result2').innerText = `${sub1 - sub2}`
+        }
+        
+        function multiplicar() {
+            var mul1 = Number(document.getElementById('txtmul1').value)
+            var mul2 = Number(document.getElementById('txtmul2').value)
+            document.getElementById('result3').innerText = `${mul1 * mul2}`
+        }
+        
+        function dividir() {
+            var div1 = Number(document.getElementById('txtdiv1').value)
+            var div2 = Number(document.getElementById('txtdiv2').value)
+            document.getElementById('result4').innerText = `${div1 / div2}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+            background-color: #41006dd3;
+            color: wheat;
+        }
+
+        #msg {
+            background: white;
+            color: black;
+            padding: 10px 0px;
+            width: 250px;
+            margin: 15px auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        document.writeln(`${p1.innerHTML}<br>${p2.innerHTML}`)
+        
+        var a = document.getElementById('msg')
+        a.addEventListener('mousedown', clicou)
+        a.addEventListener('mouseup', soltou)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou() {
+            a.innerText = 'Clicou!'
+        }
+
+        function soltou() {
+            a.innerText = 'Soltou!'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu!'
+        }
+    </script>
+</body>
+</html>

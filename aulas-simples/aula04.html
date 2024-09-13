@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite seu nome: ")
+        var salario = Number(prompt("Digite seu sálario: "))
+        document.writeln(`Olá, ${nome}. Prazer em te conhecer! Seu sálario é ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

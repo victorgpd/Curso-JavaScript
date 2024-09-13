@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        main {
+            width: 180px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 7px;
+            background-color: antiquewhite;
+        }
+        
+        input {
+            margin: 3px 0px;
+        }
+
+        button {
+            margin: 3px 0px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <label for="iuser">Usuário:</label><br>
+        <input type="text" name="user" id="iuser"><br>
+        
+        <label for="isenha">Senha:</label><br>
+        <input type="password" name="senha" id="isenha"><br>
+        <button onclick="logar()">Entrar</button>
+    </main>
+
+    <script>
+        function logar() {
+            var usuario = document.querySelector("#iuser").value
+            var senha = document.querySelector("#isenha").value
+
+            if (usuario == "Victor" && senha == "101122") {
+                alert("Logado")
+            } else {
+                alert("Usuário ou senha incorreta!")
+            }
+
+            switch (usuario) {
+                case "Victor":
+                    alert("Você está logado!")
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

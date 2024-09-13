@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="estilos/style08.css">
+</head>
+<body>
+    <header>
+        <h1>Verificar Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="inascimento">Ano de nascimento:</label>
+                <input type="number" name="nascimento" id="inascimento" min="1920" max="2024">
+            </p>
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+
+            <p id="pbutton">
+                <button onclick="verificar()">Verificar</button>
+            </p>
+        </div>
+
+        <div>
+            <p id="iniciar">Preencha os dados acima para ver o resultado!</p>
+            <div id="img"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Victor Guilherme</p>
+    </footer>
+
+    <script src="js/script08.js"></script>
+</body>
+</html>

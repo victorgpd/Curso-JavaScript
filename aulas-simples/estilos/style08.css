@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: cornflowerblue;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+section {
+    width: 350px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 15px #00000088;
+}
+
+section > div {
+    padding: 10px;
+    text-align: center;
+}
+
+#img {
+    display: none;
+    width: 250px;
+    height: 240px;
+    margin: auto;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#pbutton {
+    margin-bottom: 7px;
+}
+
+#iniciar {
+    margin-top: 0px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
