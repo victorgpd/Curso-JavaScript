@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: #14141a;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    width: 350px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 15px #00000088;
+}
+
+section > div {
+    padding: 10px;
+    text-align: center;
+}
+
+section > div > p > label {
+    display: inline-block;
+    width: 41.77px;
+}
+
+#pbutton {
+    margin-bottom: 0px;
+}
+
+#pcont {
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
